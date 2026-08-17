@@ -1,0 +1,137 @@
+@import "tailwindcss";
+
+:root {
+  --font-mono: 'JetBrains Mono', 'Fira Code', monospace;
+  --font-sans: 'Inter', system-ui, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-sans);
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.font-mono {
+  font-family: var(--font-mono) !important;
+}
+
+/* Smooth scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #d1d5db;
+  border-radius: 10px;
+}
+.dark ::-webkit-scrollbar-thumb {
+  background: #374151;
+}
+
+/* Key press animation */
+@keyframes keyPress {
+  0% { transform: translateY(0); }
+  40% { transform: translateY(2px); }
+  100% { transform: translateY(0); }
+}
+
+@keyframes correctFlash {
+  0% { background-color: inherit; }
+  30% { background-color: #22c55e33; }
+  100% { background-color: inherit; }
+}
+
+@keyframes errorShake {
+  0%, 100% { transform: translateX(0); }
+  20% { transform: translateX(-3px); }
+  60% { transform: translateX(3px); }
+}
+
+@keyframes fall {
+  from { transform: translateY(-60px); }
+  to { transform: translateY(100vh); }
+}
+
+@keyframes pulse-ring {
+  0% { transform: scale(1); opacity: 0.8; }
+  100% { transform: scale(1.4); opacity: 0; }
+}
+
+.key-press-anim {
+  animation: keyPress 0.12s ease-out;
+}
+
+.correct-flash {
+  animation: correctFlash 0.3s ease-out;
+}
+
+.error-shake {
+  animation: errorShake 0.3s ease-out;
+}
+
+/* Typing cursor blink */
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+.cursor-blink {
+  animation: blink 1s step-end infinite;
+}
+
+/* Smooth transitions for theme */
+html {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* No-select for UI elements */
+.no-select {
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Progress bar animation */
+@keyframes progressFill {
+  from { width: 0%; }
+}
+
+.progress-fill {
+  animation: progressFill 0.5s ease-out;
+}
+
+/* Falling letter */
+.falling-letter {
+  position: absolute;
+  animation: fall linear forwards;
+  user-select: none;
+  pointer-events: none;
+}
+
+/* Glow effect for active keys */
+.key-glow {
+  box-shadow: 0 0 0 2px currentColor, 0 4px 12px currentColor;
+}
+
+/* Card hover lift */
+.card-hover {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.card-hover:hover {
+  transform: translateY(-2px);
+}
+
+/* Streak fire animation */
+@keyframes flicker {
+  0%, 100% { transform: scale(1) rotate(-2deg); }
+  50% { transform: scale(1.1) rotate(2deg); }
+}
+.flicker {
+  animation: flicker 0.8s ease-in-out infinite;
+}

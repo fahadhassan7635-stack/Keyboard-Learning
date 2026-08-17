@@ -1,0 +1,197 @@
+# ===================================================
+# SEO REFERENCE FILE — Keyboard Learning
+# ===================================================
+# This file documents all SEO metadata, keywords,
+# and on-page optimization settings for the project.
+# ===================================================
+
+
+# ---------------------------------------------------
+# PRIMARY SITE INFO
+# ---------------------------------------------------
+
+Site Name:        Keyboard Learning
+Domain:           https://keyboard-learning.vercel.app
+Language:         en
+Locale:           en_US
+Category:         Education / Productivity / Typing
+
+
+# ---------------------------------------------------
+# TITLE TAGS (per page/tab)
+# ---------------------------------------------------
+
+Home:             Keyboard Learning – Master Your Typing Skills | Free Online Typing Course
+Lessons:          Keyboard Lessons – Learn Touch Typing from Scratch | Keyboard Learning
+Practice:         Typing Practice – Improve Speed & Accuracy | Keyboard Learning
+Game:             Falling Letters Typing Game – Fun Way to Type Faster | Keyboard Learning
+Progress:         Your Typing Progress – WPM History & Achievements | Keyboard Learning
+Sitemap:          Sitemap – Keyboard Learning
+
+
+# ---------------------------------------------------
+# META DESCRIPTIONS (150-160 chars)
+# ---------------------------------------------------
+
+Home:
+  Learn to type faster with Keyboard Learning. Free lessons, real-time WPM
+  tracking, typing games, and daily challenges. Start your typing journey today!
+
+Lessons:
+  Structured keyboard lessons for beginners and advanced typists. Master home row,
+  finger placement, and touch typing technique step by step.
+
+Practice:
+  Practice typing with real-time WPM and accuracy feedback. Choose from word drills,
+  sentences, and timed sessions. Improve every day with Keyboard Learning.
+
+Game:
+  Play the falling letters typing game – type falling words before they hit the
+  ground! Fun, fast, and the best way to level up your typing speed.
+
+Progress:
+  Track your typing improvements over time. View WPM history, accuracy trends,
+  completed lessons, and earned achievements all in one place.
+
+
+# ---------------------------------------------------
+# TARGET KEYWORDS
+# ---------------------------------------------------
+
+Primary:
+  - keyboard learning
+  - learn to type
+  - typing practice online
+  - typing speed test
+  - touch typing lessons
+
+Secondary:
+  - free typing course
+  - improve typing speed
+  - WPM tracker
+  - typing game online
+  - typing for beginners
+
+Long-tail:
+  - how to learn keyboard typing for beginners
+  - online typing lessons with WPM tracking
+  - free touch typing practice exercises
+  - typing speed improvement game
+  - keyboard lessons home row technique
+
+
+# ---------------------------------------------------
+# OPEN GRAPH (Social Sharing)
+# ---------------------------------------------------
+
+og:title:         Keyboard Learning – Master Your Typing Skills
+og:description:   Free online typing lessons, practice sessions, and games.
+                  Track your WPM and improve every day.
+og:image:         https://keyboard-learning.vercel.app/keyboard.png
+og:image:width:   1200
+og:image:height:  630
+og:type:          website
+og:url:           https://keyboard-learning.vercel.app
+og:site_name:     Keyboard Learning
+og:locale:        en_US
+
+
+# ---------------------------------------------------
+# TWITTER CARD
+# ---------------------------------------------------
+
+twitter:card:         summary_large_image
+twitter:title:        Keyboard Learning – Master Your Typing Skills
+twitter:description:  Free online typing practice with WPM tracking, lessons & games.
+twitter:image:        https://keyboard-learning.vercel.app/keyboard.png
+
+
+# ---------------------------------------------------
+# STRUCTURED DATA (JSON-LD) — WebSite Schema
+# ---------------------------------------------------
+
+Type:             WebSite
+Name:             Keyboard Learning
+URL:              https://keyboard-learning.vercel.app
+Description:      A free online platform to learn touch typing, practice typing speed,
+                  and track your progress with WPM and accuracy metrics.
+Author:           Keyboard Learning Team
+SameAs:           (add social links here when available)
+
+
+# ---------------------------------------------------
+# STRUCTURED DATA (JSON-LD) — WebApplication Schema
+# ---------------------------------------------------
+
+Type:             WebApplication
+Name:             Keyboard Learning
+ApplicationCategory: EducationalApplication
+OperatingSystem:  Web Browser
+Offers:
+  Price:          0
+  PriceCurrency:  USD
+AggregateRating:
+  RatingValue:    4.8
+  ReviewCount:    120 (update when real)
+
+
+# ---------------------------------------------------
+# ROBOTS & CRAWL SETTINGS
+# ---------------------------------------------------
+
+robots.txt:       /public/robots.txt
+sitemap.xml:      /public/sitemap.xml   → https://keyboard-learning.vercel.app/sitemap.xml
+
+Crawl rules:
+  User-agent: *
+  Allow: /
+  Sitemap: https://keyboard-learning.vercel.app/sitemap.xml
+
+Google Search Console:
+  → Submit sitemap.xml after deployment
+  → Verify domain ownership via DNS or HTML tag
+
+
+# ---------------------------------------------------
+# TECHNICAL SEO CHECKLIST
+# ---------------------------------------------------
+
+[x] Title tags set in index.html
+[x] Meta description added to index.html
+[x] Canonical URL set
+[x] Open Graph tags added
+[x] Twitter Card tags added
+[x] robots.txt created
+[x] sitemap.xml created
+[x] Sitemap React component created (src/pages/Sitemap.tsx)
+[x] Favicon set (keyboard.png)
+[x] Google Fonts loaded with preconnect
+[ ] og:image (1200x630) created → needs proper banner image
+[ ] JSON-LD structured data added to index.html
+[ ] Google Search Console verified
+[ ] sitemap.xml submitted to Google Search Console
+[ ] Core Web Vitals optimized (LCP, CLS, FID)
+[ ] Accessibility audit (aria labels, alt texts)
+
+
+# ---------------------------------------------------
+# PAGE SPEED TARGETS
+# ---------------------------------------------------
+
+LCP (Largest Contentful Paint):   < 2.5s
+FID (First Input Delay):          < 100ms
+CLS (Cumulative Layout Shift):    < 0.1
+Performance Score (Lighthouse):   > 90
+
+
+# ---------------------------------------------------
+# NOTES
+# ---------------------------------------------------
+
+- Update sitemap.xml lastmod dates after each deployment
+- Replace placeholder domain with real domain before launch
+- Add hreflang tags if multi-language support is added
+- Consider adding FAQ schema for "how to type faster" queries
+- viteSingleFile plugin bundles everything into index.html —
+  ensure robots.txt and sitemap.xml stay in /public/ so they
+  are served as static files by the hosting provider.

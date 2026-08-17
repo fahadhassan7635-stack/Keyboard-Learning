@@ -1,0 +1,11 @@
+# robots.txt for Keyboard Learning
+# https://www.robotstxt.org/robotstxt.html
+
+User-agent: *
+Allow: /
+
+# Disallow admin or private paths (add if needed)
+# Disallow: /admin/
+
+# Sitemap location
+Sitemap: https://keyboard-learning.vercel.app/sitemap.xml
